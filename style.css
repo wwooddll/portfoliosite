@@ -7,6 +7,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+body.prevent-scroll {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,6 +88,8 @@ li.footer-wide {
   line-height: 1.1em;
   text-transform: uppercase;
   font-weight: 600;
+  border-bottom: 5px solid #f16377;
+  padding-bottom: 10px;
 
 }
 
@@ -141,9 +147,9 @@ border-right: 1000px solid transparent;
 .shape2 {
 width: 0;
 height: 0;
-border-bottom: 140px solid #f4f4f4;
-border-left: 370px solid transparent;
-border-right: 1000px solid transparent;
+border-bottom: 10vw solid #f4f4f4;
+border-left: 34vw solid transparent;
+border-right: 63vw solid transparent;
 }
 
 .arrow {
@@ -155,6 +161,7 @@ border-right: 1000px solid transparent;
   display: flex;
   background-color: #f4f4f4;
   padding-top: 50px;
+  justify-content: space-around;
 }
 .flex-block1 {
   margin: 5px 2px 2px 5px;
@@ -408,6 +415,20 @@ border-right: 1000px solid transparent;
     font-size: 11px;
     color: #000;
   }
+  .mobilenav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    padding-top: 113px;
+  }
+  .mobilenav li {
+      float: none;
+      font-size: 30px;
+      padding-top: 20px;
+  }
 
 @media only screen and (max-width: 1000px) {
   .logo {
@@ -426,9 +447,6 @@ border-right: 1000px solid transparent;
 }
 li {
   padding: 0 10px;
-}
-.shape2 {
-  display: none;
 }
 .arrow {
   display: none;
